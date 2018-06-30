@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpeechMore - BodyMovin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Oswald');
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            text-align: center;
+            color: white;
+        }
+        * {
+            font-weight: lighter !important;
+        }
+        a {
+            color: #ff022c;
+            text-decoration: none;
+        }
+        .lp {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #sm {
+            width: 100%;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="lp">
+        <div id="sm">
+
+        </div>
+    </div>
+    <div class="lp">
+        <h1 style="font-size: 25px;margin:10px !important;padding:0px !important;">The code:</h1>
+        <a style="font-size: 30px;margin:0px !important;padding:0px !important;" href="https://gitlab.fancy.org.uk/harry/logo-animation">GitLab</a>
+        <p><small><i>You will need an account on <a href="https://gitlab.fancy.org.uk">https://gitlab.fancy.org.uk</a> to view this.</i></small></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" type="text/javascript"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+                container: document.getElementById('sm'),
+                path: '../data.json',
+                loop: false,
+                renderer: 'svg',
+                autoplay: true,
+                name: "SpeechMore",
+        })
+        animation.setSpeed(0.9);
+    </script>
+</body>
+</html>
