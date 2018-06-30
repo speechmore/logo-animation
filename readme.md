@@ -1,5 +1,5 @@
 ## How to install my SpeechMore animation:
-1. Drag the files into your site directory, then change the path to the path of the `data.json` file, then make a `<div>` container and give it an id, for this example I'm using the id `test`
+1. Drag the folder `images` and file `data.json` into your site directory, then change the path to the path of the `data.json` file, then make a `<div>` container and give it an id, for this example I'm using the id `test`
 ```html
 <div id="test">
 </div>
