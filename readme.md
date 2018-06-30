@@ -1,5 +1,5 @@
 ## How to install my SpeechMore animation:
-1. To install make a `<div>` container and give it an id, for this example I'm using the id `test`
+1. Drag the files into your site directory, then change the path to the path of the `data.json` file, then make a `<div>` container and give it an id, for this example I'm using the id `test`
 ```html
 <div id="test">
 </div>
@@ -14,7 +14,7 @@
     <script>
         var animation = bodymovin.loadAnimation({
                 container: document.getElementById('sm'),
-                path: '../data.json',
+                path: 'data.json', // Assuming it's in the root
                 loop: false,
                 renderer: 'svg',
                 autoplay: true,
@@ -40,7 +40,7 @@ Or for the bottom of the page:
     <script>
         var animation = bodymovin.loadAnimation({
                 container: document.getElementById('sm'),
-                path: '../data.json',
+                path: 'data.json', // Assuming it's in the root
                 loop: false,
                 renderer: 'svg',
                 autoplay: true,
