@@ -15,7 +15,7 @@
     import animationData from './data.json';
 
     for (let asset of animationData.assets) {
-        asset.p = require(`./images/${p}`);
+        asset.p = require(`./images/${asset.p}`);
         delete asset.u;
     }
 
